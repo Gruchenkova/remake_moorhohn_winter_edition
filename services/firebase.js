@@ -17,8 +17,7 @@ firebase.initializeApp(firebaseConfig);
 // Get a reference to the database service
 const database = firebase.database();
 
-// import { point } from './gameLogic.js';
-// import Savescore from '../views/pages/Savescore.js';
+
 let firebaseMod = {
     writeResult: (name, result) => {
         firebase.database().ref('result').push({

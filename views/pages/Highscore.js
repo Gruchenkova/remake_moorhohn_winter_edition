@@ -11,7 +11,7 @@ let Highscore = {
                     <th>P O I N T S</th>
                 </tr>
             </table>
-            <a id="return" class='btn-class' href="/#/">Menu</a>
+            <a id="return" class='btn-class' href="./#/">Menu</a>
         </div>
         `
         return view
