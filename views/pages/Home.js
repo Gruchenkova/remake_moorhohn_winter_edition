@@ -5,8 +5,8 @@ let Home = {
         let view =  /*html*/`
             <div id='menu'>
             <ul id='homeul'>
-            <li id='btnGame' class='btn-class'><a href="/#/newgame">New game</a></li>
-            <li id='btnHighScore' class='btn-class'><a href="/#/highscore">High score</a></li>
+            <li id='btnGame' class='btn-class'><a href="./#/newgame">New game</a></li>
+            <li id='btnHighScore' class='btn-class'><a href="./#/highscore">High score</a></li>
             <ul>
             </div>
         `
