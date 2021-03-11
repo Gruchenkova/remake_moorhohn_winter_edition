@@ -9,9 +9,9 @@ import Utils from './services/Utils.js'
 // List of supported routes. Any url other than these routes will throw a 404 error
 const routes = {
     '/': Home
-    , '/highscore': Highscore
-    , '/newgame': Game
-    , '/savescore': Savescore
+    , 'remake_moorhohn_winter_edition/highscore': Highscore
+    , 'remake_moorhohn_winter_edition/newgame': Game
+    , 'remake_moorhohn_winter_edition/savescore': Savescore
     ,
 };
 
