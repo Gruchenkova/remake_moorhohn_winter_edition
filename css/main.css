@@ -1,0 +1,187 @@
+@font-face {
+  font-family: BalsamiqSans; /* Имя шрифта */
+  src: url(../fonts/BalsamiqSans-Bold.ttf);/*путь к файлу со шрифтом */
+ }
+html, body {
+    height:100%;
+    margin:0;
+    padding:0;
+    overflow:hidden;
+    position: relative;
+}
+:-webkit-full-screen img {
+    width: 100%;
+    height: 100%;
+  }
+#canvasBackground {
+  /* width: 100%;  */
+  /* height: 100%; */
+  position: absolute;
+}
+#canvas{
+  position: absolute;
+  width: 100%; 
+  height: 100%;
+  background-color: transparent;
+  z-index: 99;
+}
+#bullets {
+  position: absolute;
+  background-color: transparent;
+  z-index: 199;
+  right: 0;
+  bottom: 0;
+}
+#canvasSnow {
+  width: 100%; 
+  height: 100%;
+  position: absolute;
+  z-index: 98;
+}
+
+#page_container {
+  width: 100%; 
+  height: 100%;
+  position: absolute;
+}
+#menu {
+  width: 100%; 
+  height: 100%;
+  position: absolute;
+  background-image: url(../new/mainScreen.png);
+  background-repeat: no-repeat;
+  background-size:60%;
+  background-position: center center;
+  background-color: #59738a;
+}
+#homeul {
+  width: 100%; 
+  height: 100%;
+}
+a {
+  text-decoration: none;
+}
+#btnGame {
+  position: absolute;
+  left: 25%;
+  bottom: 45%;
+  list-style: none;
+  /* border-radius: 20%; */
+  width: 85px;
+  height: 25px;
+  text-align: center;
+}
+#btnHighScore {
+  position: absolute;
+  right: 25%;
+  bottom: 45%;
+  list-style: none;
+  /* border-radius: 20%; */
+  width: 85px;
+  height: 25px;
+  text-align: center;
+}
+.btn-class {
+  display: inline-block;
+  border:1px solid #E0FFFF;
+  color: #ffffff;
+  border-radius: 3px 3px 3px 3px;
+  -webkit-border-radius: 3px 3px 3px 3px;
+  -moz-border-radius: 3px 3px 3px 3px;
+  font-family: Comic Sans MS;
+  width: auto;
+  height: auto;
+  font-size: 16px;
+  padding: 10px 40px;
+  box-shadow: inset 0 1px 0 0 #AFEEEE,inset 0 -1px 0 0 #eff5f7da,inset 0 0 0 1px #8df5fc,0 2px 4px 0 #D4D4D4;
+  -moz-box-shadow: inset 0 1px 0 0 #AFEEEE,inset 0 -1px 0 0 #eff5f7da,inset  0 0 0 1px #8df5fc,0 2px 4px 0 #D4D4D4;
+  -webkit-box-shadow: inset 0 1px 0 0 #AFEEEE,inset 0 -1px 0 0 #eff5f7da,inset  0 0 0 1px #8df5fc,0 2px 4px 0 #D4D4D4;
+  text-shadow: 0 1px 0 #fff;
+  background-image: linear-gradient(to left, #59738a, #ffffff);
+  background-color: #59738a;
+}
+
+ .btn-class:hover, .btn-class:active{
+  border:1px solid #eff5f7da,inset ;
+  color: #ffffff;
+  box-shadow: inset 0 1px 0 0 #E0FFFF,inset 0 -1px 0 0 #eff5f7da,inset  0 0 0 1px #8dfced;
+  -moz-box-shadow: inset 0 1px 0 0 #E0FFFF,inset 0 -1px 0 0 #eff5f7da,inset  0 0 0 1px #8dfced;
+  -webkit-box-shadow: inset 0 1px 0 0 #E0FFFF,inset 0 -1px 0 0 #eff5f7da,inset  0 0 0 1px #8dfced;
+  background-color: #E0FFFF;
+ }
+ #timerCanvas {
+   position: absolute;
+   background-color: transparent;
+   height: 50px;
+   width: 100px;
+   right: 20px;
+   top: 20px;
+   z-index: 999;
+ }
+ #saveResult {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   height: 100%;
+   background-image: url(../new/savescore.png);
+   background-repeat: no-repeat;
+   background-size:60%;
+   background-position: center center;
+   background-color: #59738a;
+ }
+ input {
+   width: 300px;
+   background-color:#4c6375;
+   color:#8dfced;
+ }
+ #saveUl{
+   display: flex;
+   justify-content: space-between;
+   width: 30%;
+   padding: 0;
+}
+li {
+  list-style: none;
+}
+#result {
+  position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   width: 100%;
+   height: 100%;
+   background-image: url(../new/savescore.png);
+   background-repeat: no-repeat;
+   background-size:60%;
+   background-position: center center;
+   background-color: #59738a;
+}
+table {
+  font-family: BalsamiqSans;
+  width: 40%;
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -40%);
+  color:   white;
+  font-size: 25px;
+  letter-spacing: 4px;
+}
+th, td {
+  text-align: center;
+}
+th {
+  font-size: 35px;
+}
+#return {
+  position: absolute;
+  right: 25%;
+  bottom: 10%;
+  color: blue;
+}
