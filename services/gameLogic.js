@@ -109,7 +109,7 @@ let gameLogic = {
             if (x < 0) {
                 startAudio.stop();
                 clearTimeout(timer); // таймер остановится на нуле
-                window.location.href = '/#/savescore'; //открываем ввод данных для сохранения результата;
+                window.location.href = './#/savescore'; //открываем ввод данных для сохранения результата;
             }
             else {
                 timer = setTimeout(showTimer, 1000);
