@@ -9,9 +9,9 @@ import Utils from './services/Utils.js'
 // List of supported routes. Any url other than these routes will throw a 404 error
 const routes = {
     '/': Home
-    , 'remake_moorhohn_winter_edition/highscore': Highscore
-    , 'remake_moorhohn_winter_edition/newgame': Game
-    , 'remake_moorhohn_winter_edition/savescore': Savescore
+    , '/highscore': Highscore
+    , '/newgame': Game
+    , '/savescore': Savescore
     ,
 };
 
@@ -31,7 +31,7 @@ const router = async () => {
     // Get the page from our hash of supported routes.
     // If the parsed URL is not in our list of supported routes, select the 404 page instead
     let page = routes[parsedURL] ? routes[parsedURL] : Error404
-    // debugger
+    debugger
     content.innerHTML = await page.render();
     await page.after_render();
 
