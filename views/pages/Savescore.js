@@ -9,8 +9,8 @@ let Savescore = {
             <input id='name'></input>
             <p>Ваш результат:${point} очков</p>
             <ul id='saveUl'>
-                <li id='saveResBtn' class='btn-class'><a href="/#/highscore">Сохранить</a></li>
-                <li id=#cancelBtn class='btn-class'><a href="/#/">Отмена</a></li>
+                <li id='saveResBtn' class='btn-class'><a href="./#/highscore">Сохранить</a></li>
+                <li id=#cancelBtn class='btn-class'><a href="./#/">Отмена</a></li>
             </ul>
            </div>
         `

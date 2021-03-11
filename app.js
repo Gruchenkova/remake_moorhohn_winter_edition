@@ -31,7 +31,6 @@ const router = async () => {
     // Get the page from our hash of supported routes.
     // If the parsed URL is not in our list of supported routes, select the 404 page instead
     let page = routes[parsedURL] ? routes[parsedURL] : Error404
-    debugger
     content.innerHTML = await page.render();
     await page.after_render();
 
