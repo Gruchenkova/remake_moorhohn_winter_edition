@@ -56,6 +56,7 @@ let gameLogic = {
             html5: true,
             loop: true,
         })
+        startAudio.play();
         let fireAudio = new Howl({
             src: ['./audio/fire.mp3'],
             volume: 0.8,
@@ -99,7 +100,7 @@ let gameLogic = {
         timerCanvas.height = 50;
         timerCtx.font = "30px Comic Sans MS";
         timerCtx.fillStyle = "#FFFFFF";
-
+        
         // функция обратного отсчета
         function showTimer() {
             timerCtx.clearRect(0, 0, 100, 50);
